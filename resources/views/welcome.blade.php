@@ -13,9 +13,9 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
+                background-color: #ffefe0;
+                color: #120807;
+                font-family: 'Verdana', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
@@ -50,7 +50,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #646c6f;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    ...decisions that I am proud of!
                 </div>
 
                 <div class="links">
