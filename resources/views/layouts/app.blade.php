@@ -48,10 +48,17 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+
+                                    {{--<!-- TL inserted link to the admin page --!>>--}}
+                                    <a class="dropdown-item" href="{{ route('admin') }}">
+
+                                        {{ __('Administrator') }}
+                                    </a>
+
+
                                 </div>
                             </li>
                         @endguest
