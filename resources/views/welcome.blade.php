@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Cross or Check</title>
 
         <!-- Fonts -->
@@ -89,6 +90,33 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+
+                <br/>
+                <br/>
+
+                <div id="coc-icons" class="container">
+                    <div class="row justify-content-md-center">
+                        <div id="cross" class="col col-lg-2">
+                            {!! file_get_contents(asset('images/cross.svg')) !!}
+                        </div>
+                        <div class="col-md-auto">
+                            <div id="or" class="mt-5 ml-3"><h1>||</h1></div>
+                        </div>
+                        <div id="check" class="col col-lg-2 mt-3 ml-3">
+                            {!! file_get_contents(asset('images/check.svg')) !!}
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div id="cross" class="col col-lg-2">
+                        </div>
+                        <div class="col-md-auto">
+                            <div id="equal">{!! file_get_contents(asset('images/equal.svg')) !!}</div>
+                        </div>
+                        <div id="check" class="col col-lg-2">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
