@@ -23,6 +23,9 @@ Route::get('/rules', function () {
     return view('rules');
 })->name('rules');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
 
 Auth::routes();
 

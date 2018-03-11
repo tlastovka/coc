@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+{{-- Todo: The .env configuration file must be modified in the MAIL section to be able to send e-mails and not to throw error " Expected response code 250 but got code "530", with message "530 5.7.1 Authentication required" following the password reset"--}}
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

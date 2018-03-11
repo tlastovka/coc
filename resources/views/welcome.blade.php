@@ -87,6 +87,7 @@
                 <div class="links">
                     <a href="{{route('purpose')}}">Purpose</a>
                     <a href="{{route('rules')}}">Rules</a>
+                    <a href="{{route('contact')}}">Contact</a>
                 </div>
 
                 <br/>
