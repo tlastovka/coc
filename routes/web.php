@@ -31,3 +31,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin','AdminController@index')->name('admin');
+
+Route::get('/admin/users', 'UsersController@index')->name('users');
+Route::get('/admin/events', 'EventsController@index')->name('events');
+Route::get('/admin/issues_questions', 'I_QController@index')->name('i_q');

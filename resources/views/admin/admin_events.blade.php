@@ -1,0 +1,35 @@
+@extends('layouts.app')
+
+<!-- Jquerry and Bootstrap!-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+@section('content')
+
+
+
+    <div style="overflow:hidden;">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-lg-12 ml-3">
+                    <div id="datetimepicker12"></div>
+
+                    <h1>the datetimepicker() function is not working</h1>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker12').datetimepicker({
+                    inline: true,
+                    sideBySide: true
+                });
+            });
+        </script>
+    </div>
+
+
+
+@endsection

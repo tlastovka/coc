@@ -10043,3 +10043,21 @@ a.text-dark:focus {
   text-align: left;
 }
 
+.admin_action_table {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+}
+
+.admin_table_heading {
+  background-color: #646c6f;
+  color: #ffefe0;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+}
+
+.admin_action_title {
+  color: #646c6f;
+}
+

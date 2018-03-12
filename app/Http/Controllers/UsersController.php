@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,11 +13,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin/admin_actions');
-        /**TL reference to a view where administrator(s) will be creating Events,
-         * Issues and Questions. Todo: should not this be in the 'create' action?
-        *
-         */
+        return view('admin/admin_users');
     }
 
     /**
