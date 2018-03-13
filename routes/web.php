@@ -33,5 +33,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/admin','AdminController@index')->name('admin');
 
 Route::get('/admin/users', 'UsersController@index')->name('users');
-Route::get('/admin/events', 'EventsController@index')->name('events');
+Route::get('/admin/events', 'EventsController@create')->name('create_events');
 Route::get('/admin/issues_questions', 'I_QController@index')->name('i_q');
+Route::post('/admin/events', 'EventsController@post')->name('store_events');
+
+//Route to an universal Time and Date Picker Todo: try to make this universal so that it can be used as a template for other routes/sites
+//Route::get('/admin/datepicker', function () {
+//    return view('/admin/admin_datepicker');
+//    });

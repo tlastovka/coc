@@ -13,7 +13,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return view('admin/admin_events');
+
     }
 
     /**
@@ -23,7 +23,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin/admin_events');
     }
 
     /**
@@ -45,7 +45,7 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('admin/event/{id}');// should not here be a dollar sign?
     }
 
     /**

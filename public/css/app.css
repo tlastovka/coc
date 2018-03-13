@@ -10061,3 +10061,11 @@ a.text-dark:focus {
   color: #646c6f;
 }
 
+.admin_events-body {
+  background-color: #ffefe0;
+}
+
+#inlineFormCustomSelect {
+  height: 30px;
+}
+

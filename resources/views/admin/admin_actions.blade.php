@@ -27,7 +27,7 @@
         <th scope="row">2</th>
         <td>Set Events</td>
         <td>Events are meetings or other events when decisions are supposed to take place.  </td>
-        <td><a href="{{route('events')}}">Click to proceed</a></td>
+        <td><a href="{{route('create_events')}}">Click to proceed</a></td>
     </tr>
     <tr>
         <th scope="row">3</th>

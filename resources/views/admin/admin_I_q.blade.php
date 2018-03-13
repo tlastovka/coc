@@ -11,7 +11,12 @@
             <h5> This is a page where you must define the Issue and phrase specific questions according to the corresponding instructions. Please read the "Instructions" below carefully</h5><br/>
         </div>
 
-        <!-- event picker !-->
+
+
+
+
+
+
         <div class="event_picker">
             <div class="container-fluid">
                 <div class="row">
@@ -20,10 +25,7 @@
                         <!-- Form code begins -->
                         <!--Todo: make link to Bootstrap day picker using JQuery and/or JS to automate selection of the day and time of the meeting!-->
                         <form method="post">
-                            <div class="form-group event_date"> <!-- Date input !-->
-                                <label class="control-label" for="event_date">Event Date (MM/DD/YYYY):</label>
-                                <input class="form-control" id="event_date" name="date" placeholder="MM/DD/YYYY" type="text"/></input>
-                            </div>
+
 
                             <div class="form-group issue_title"> <!-- Issue input !-->
                                 <label class="control-label" for="issue_title">Issue Title (Short text):</label>
@@ -63,7 +65,10 @@
 
 
 
-    </div>
+
+
+
+
 
 
 @endsection
