@@ -13,7 +13,7 @@ class EventsController extends Controller
      */
     public function index()
     {
-
+        return view('admin/admin_list_events');  //Tl note: a place, where I will display events created by the create method below and pulled out from the DB
     }
 
     /**
@@ -23,7 +23,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        return view('admin/admin_events');
+        return view('admin/admin_e-i-q');
     }
 
     /**

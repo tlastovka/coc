@@ -61,52 +61,81 @@
 
 
 
-<div class="container container_datepicker">
+<div class="container">
 
 
     <div class="i_q_title ml-lg-5">
-        <h3> Event Setter </h3><br/>
-        <h5> This is a page where you must set the date, time, and title of an Event. Also, you are expected to give a number of Issues on the agenda of the event</h5><br/>
+        <h3> The Event Setter </h3><br/>
+        <h5> This is a page where you must set parameters of the respective Event (e.g.: a process of informing Members, collecting their feedback, and voting)</h5><br/>
     </div>
 
 
     <form class="eventpicker_form" method="POST" action="{{route('store_events')}}"> <!-- Todo: insert a route via which I will be sending events data to the DB !-->
         <div style="position: relative">
             <strong>Select Date of the Event:</strong>
-            <input class="date form-control" type="text">
+            <input class="date form-control" type="text" placeholder="Click here to select">
         </div><br/>
 
 
         <div style="position: relative">
             <strong>Select Time of the Event:</strong>
-            <input class="timepicker form-control" type="text">
+            <input class="timepicker form-control" type="text" placeholder="Click here to select">
         </div><br/>
 
         <div class="form-group event_title"> <!-- Date input !-->
-            <label class="control-label" for="event_title">Event Title :</label>
+            <strong class="control-label" for="event_title">Event Title:</strong>
             <input class="form-control" id="event_title" name="event_title" placeholder="Event Title" type="text"/></input>
+        </div>
+
+        <div class="form-group issue_title"> <!-- Date input !-->
+            <strong class="control-label" for="issue_title">Issue Title:</strong>
+            <input class="form-control" id="issue_title" name="issue_title" placeholder="Issue Title" type="text"/></input>
+        </div>
+
+        <div class="form-group issue_descr">
+            <strong class="control-label" for="issue_descr">Description of the Issue:</strong>
+            <textarea class="form-control" id="issue_descr" rows="3" placeholder="Describe the Issue" type="text"></textarea>
         </div><br/>
 
-        <div class="form-row align-items-center">
-            <div class="col-auto my-1">
-                <label class="mr-sm-2" for="inlineFormCustomSelect">Number of Issues on the agenda:</label>
-                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option> <!-- Todo: in the beta version automate this with additional button which would add next button !-->
-                </select>
+        <div class="admin_questions_title">
+            <h3>Questions</h3>
+        </div><br/>
+
+
+        <div class="form-group q1">
+            <label for="q1">Q1 (Text):</label>
+            <input class="form-control" id="q1" name="q1_question" placeholder="Example: Do you agree with all of us that it is important to make qualified decisions which benefit majority of the members?" type="text"/>
+            <div class="admin_questions_hints">
+            <h5> HINT: Q1 must be limited to one short sentence that (almost) nobody can answer "NO" . It is a general, Leading, and/or loaded question, which is meant not to polarize, but to UNIFY the respondents and expose them to the Social Approval/Desirability Bias (by now, the respondents will know that their answers will be published) the Confirmation Bias and the Continuity Bias.
+                The question must be heavily biased towards "YES" and can be used against the respective respondent in case he/she starts answering the follow-up questions not in tine with the premise contained in this question.
+                Those who answer "No" will be subject to either credibility discounting, re-routed to a different online session, or eliminated from the online voting. For more information refer to the CrossOrCheck manual. </h5>
             </div>
-            <div class="col-auto my-1">
-                <div class="custom-control custom-checkbox mr-sm-2 mt-5">
-                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                    <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label><br/>
-                </div>
-            </div><br/>
         </div>
+
+        <div class="form-group q2">
+            <label for="q1">Q2 (Text):</label>
+            <input class="form-control" id="q2" name="q2_question" placeholder="Example: Are you also tired of endless Flat Owners Association meetings, full of emotions, inefficiency, and unpredictable results?" type="text"/>
+            <div class="admin_questions_hints">
+                <h5> HINT: Q2 must be also limited to one short sentence. However, this question must be issue specific and should address the biggest problem members face due to the issue discussed. It must refere to the affirmative position of the majority "e.g.: ..also (meaning: just like all of us)...". Again it must be a question which is hard to answer "NO" and integrates member to reach the mutually acceptable target. The question must be a Leading, loaded and biased towards "YES". Those answering "No" will be subject to either credibility discounting, re-routed to a different online session, or eliminated from the online voting. For more information refer to the CrossOrCheck manual. </h5>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="form-group"> <!-- Submit button -->
@@ -116,6 +145,18 @@
     </form>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Todo: date and time selectors must work on click/select and on enter. The selected day should be highligted during "hover". I think I am using old bootstrap !-->
 

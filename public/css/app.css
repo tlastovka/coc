@@ -10065,7 +10065,14 @@ a.text-dark:focus {
   background-color: #ffefe0;
 }
 
-#inlineFormCustomSelect {
-  height: 30px;
+.admin_questions_title {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.admin_questions_hints {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #646c6f;
 }
 

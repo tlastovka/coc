@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class AdminController extends Controller //Todo: here is a mistake!. If users try to access the admin view from URL using "/admin" they msut be redirected to the Auth middleware first!
 {
     /**
      * Display a listing of the resource.
