@@ -10076,3 +10076,20 @@ a.text-dark:focus {
   color: #646c6f;
 }
 
+.card-body {
+  background-color: #ffefe0;
+}
+
+.PDM_title,
+.SDM_title,
+.TDM_title {
+  color: #ffefe0;
+  background-color: #646c6f;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-check_funding {
+  display: inline-block;
+}
+

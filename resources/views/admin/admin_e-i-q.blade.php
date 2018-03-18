@@ -120,23 +120,86 @@
             </div>
         </div>
 
+        <div>
+            <label class="form-group definitions">Problem, Solution, and Target Definition Questions:</label>
+        </div>
+
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center PDM_title"><strong>Problem Definition by the Manager:</strong></h5>
+                    <h5 class="card-text PDMs">Top 5 problems, <strong>ranked top to bottom</strong></h5>
+
+                    <input class="form-control mb-1" id="PDM1" name="PDM1_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="PDM2" name="PDM2_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="PDM3" name="PDM3_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="PDM4" name="PDM4_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="PDM5" name="PDM5_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">HINT: The issue is defined by the problems it which it is associated with. They should be listed here in the order of their importance</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center SDM_title"><strong>Solution Definition by the Manager:</strong></h5>
+                    <h5 class="card-text SDQs">Top 5 solutions, <strong>ranked top to bottom</strong></h5>
+
+                    <input class="form-control mb-1" id="SDM1" name="SDM1_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="SDM2" name="SDM2_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="SDM3" name="SDM3_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="SDM4" name="SDM4_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="SDM5" name="SDM5_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">HINT: The problems can be solved by applying the following solution. The solutions should be rank-ordered according to the effectiveness in solving the problem and delivering targeted results</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center TDM_title"><strong>Target Definition by the Manager:</strong></h5>
+                    <h5 class="card-text TDQs">Top 5 targets, <strong>ranked top to bottom</strong></h5>
+
+                    <input class="form-control mb-1" id="TDM1" name="TDM1_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="TDM2" name="TDM2_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="TDM3" name="TDM3_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="TDM4" name="TDM4_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                    <input class="form-control mb-1" id="TDM5" name="TDM5_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">HINT: The rank-ordered list of targets defines realistic goals which the solutions can achieve provided the Members vote "Yes"</small>
+                </div>
+            </div>
+
+        </div><br/>
+
+        <div class="inline form-check_funding">
+            <label class="form-check-label" for="funding_check">Will extra funding be required?</label>
+            <input type="checkbox" class="form-check funding_required" id="funding_check">
+        </div>
+        <br/>
+        <br/>
+
+        <div class="form-group funding_explained">
+            <label for="funding_explanation">If yes, define total cost and funding terms for one membership unit:</label>
+            <input class="form-control" id="funding_explanation" name="funding_explained" placeholder="Please, insert here description of any funding requirement" type="text"/>
+            <div class="admin_questions_hints">
+                <h5> HINT: Please provide maximum clarity in terms of total cost, sharing algorithm, total contribution per one membership unit, funding options etc. For details, refer to the CrossOrCheck Manual   </h5>
+            </div>
+        </div>
 
 
+        <br/>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="form-group voting">
+            <label for="voting">Voting Question (Text):</label>
+            <input class="form-control" id="voting_question" name="voting_question" placeholder="Please, insert here a properly framed voting question" type="text"/>
+            <div class="admin_questions_hints">
+                <h5> HINT: Educate the user about framing and proper wording of the voting question ....... </h5>
+            </div>
+        </div><br/>
 
         <div class="form-group"> <!-- Submit button -->
             <button class="btn btn-success " name="submit" type="submit">Submit</button>
