@@ -97,6 +97,30 @@
             <textarea class="form-control" id="issue_descr" rows="3" placeholder="Describe the Issue" type="text"></textarea>
         </div><br/>
 
+
+        <div class="admin_intro_title">
+            <h3>Introduction</h3>
+        </div><br/>
+
+        <div class="form-group into_speech">
+            <label for="intro_speech">Intro Speech (Text):</label>
+            <textarea class="form-control" id="intro_speach textarea"  name="voice-over text" Placeholder="Write text which will be converted to a voice-over presentation" rows="5" type="text"></textarea>
+            <br/>
+            <label for="initial_gift">Initial Gift  (Text):</label>
+            <input class="form-control" id="initial_gift" name="initial_gift_defined" placeholder="Identify a small 'initial gift', which the Management can 'present' to each and every member."  type="text"/>
+            <br/>
+            <label for="upload_intro_summary">Upload Intro Summary:</label>
+            <input class="upload_intro_summary" id="upload intro summary"  name="upload_intro_summary" type="file"/>
+        </div>
+
+        <div class="admin_intro_hint">
+                <h5> HINT: the introductory text should contatin the following:........ </h5>
+        </div>
+        <br/>
+
+
+
+
         <div class="admin_questions_title">
             <h3>Questions</h3>
         </div><br/>
@@ -129,12 +153,16 @@
                 <div class="card-body">
                     <h5 class="card-title text-center PDM_title"><strong>Problem Definition by the Manager:</strong></h5>
                     <h5 class="card-text PDMs">Top 5 problems, <strong>ranked top to bottom</strong></h5>
-
+                    <label for="problems_speech">Problems Speech (Text):</label>
+                    <textarea class="form-control" id="problem_speech textarea"  name="problem_voice-over_text" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text"></textarea>
+                    <br/>
                     <input class="form-control mb-1" id="PDM1" name="PDM1_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="PDM2" name="PDM2_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="PDM3" name="PDM3_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="PDM4" name="PDM4_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="PDM5" name="PDM5_question" placeholder="Enter the problem (max. 50 characters)" type="text"/>
+                    <label for="upload_problems_summary">Upload Problems Summary:</label>
+                    <input class="upload_problems_summary" id="upload problems summary"  name="upload_problems_summary" type="file"/>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">HINT: The issue is defined by the problems it which it is associated with. They should be listed here in the order of their importance</small>
@@ -145,12 +173,16 @@
                 <div class="card-body">
                     <h5 class="card-title text-center SDM_title"><strong>Solution Definition by the Manager:</strong></h5>
                     <h5 class="card-text SDQs">Top 5 solutions, <strong>ranked top to bottom</strong></h5>
-
+                    <label for="solutions_speech">Solutions Speech (Text):</label>
+                    <textarea class="form-control" id="solution_speech textarea"  name="solutions_voice-over_text" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text"></textarea>
+                    <br/>
                     <input class="form-control mb-1" id="SDM1" name="SDM1_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="SDM2" name="SDM2_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="SDM3" name="SDM3_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="SDM4" name="SDM4_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="SDM5" name="SDM5_question" placeholder="Enter the solution (max. 50 characters)" type="text"/>
+                    <label for="upload_solutions_summary">Upload Solutions Summary:</label>
+                    <input class="upload_solutions_summary" id="upload solutions summary"  name="upload_solutions_summary" type="file"/>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">HINT: The problems can be solved by applying the following solution. The solutions should be rank-ordered according to the effectiveness in solving the problem and delivering targeted results</small>
@@ -161,12 +193,16 @@
                 <div class="card-body">
                     <h5 class="card-title text-center TDM_title"><strong>Target Definition by the Manager:</strong></h5>
                     <h5 class="card-text TDQs">Top 5 targets, <strong>ranked top to bottom</strong></h5>
-
+                    <label for="targets_speech">Targets Speech (Text):</label>
+                    <textarea class="form-control" id="target_speech textarea"  name="targets_voice-over_text" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text"></textarea>
+                    <br/>
                     <input class="form-control mb-1" id="TDM1" name="TDM1_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="TDM2" name="TDM2_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="TDM3" name="TDM3_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="TDM4" name="TDM4_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
                     <input class="form-control mb-1" id="TDM5" name="TDM5_question" placeholder="Enter the target (max. 50 characters)" type="text"/>
+                    <label for="upload_targets_summary">Upload Targets Summary:</label>
+                    <input class="upload_targets_summary" id="upload targets summary"  name="upload_targets_summary" type="file"/>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">HINT: The rank-ordered list of targets defines realistic goals which the solutions can achieve provided the Members vote "Yes"</small>
@@ -193,7 +229,12 @@
 
         <br/>
 
+
+
         <div class="form-group voting">
+            <label for="preaching_speech">Preaching (Text):</label>
+            <textarea class="form-control" id="preaching_speech textarea"  name="preaching_voice-over_text" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please   refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text"></textarea>
+            <br/>
             <label for="voting">Voting Question (Text):</label>
             <input class="form-control" id="voting_question" name="voting_question" placeholder="Please, insert here a properly framed voting question" type="text"/>
             <div class="admin_questions_hints">

@@ -10065,7 +10065,8 @@ a.text-dark:focus {
   background-color: #ffefe0;
 }
 
-.admin_questions_title {
+.admin_questions_title,
+.admin_intro_title {
   margin-left: 50px;
   margin-right: 50px;
 }
