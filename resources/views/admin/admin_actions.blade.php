@@ -31,7 +31,7 @@
         <th scope="row">2</th>
         <td>Set-up the Event(s)</td>
         <td>An Event is an instance of the the process which starts with definition of the voting date and time, and the main issue in question. As part of the Event we inform the members about the Issue, problems, targets, solutions and funding options. We expect to collect genuine feedback from the Members, and ask them to vote on the Issue. To provide a relevant benchmark, some questions are paired with "desirable answers" as defined by the Administrator/Leader</a></td>
-        <td><a href="{{route('create_e-i-q')}}">Click to proceed</a></td>
+        <td><a href="{{route('create_events')}}">Click to proceed</a></td>
         <td><a href="{{route('list_events')}}">Click to proceed</a></td>
     </tr>
 

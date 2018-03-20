@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -13,6 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
+        $events = Event::all();
+
         return view('admin/admin_list_events');  //Tl note: a place, where I will display events created by the create method below and pulled out from the DB
     }
 
@@ -23,7 +26,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        return view('admin/admin_e-i-q');
+        return view('admin/admin_create_events');
     }
 
     /**
@@ -34,7 +37,46 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        $this->validate($request [
+//            'event_title'
+//            'event_descr'
+//            'intro_speech'
+//            'ini_gift'
+//            'q1'
+//            'q2'
+//            'problems_speech'
+//            'pdm1'
+//            'pdm2'
+//            'pdm3'
+//            'pdm4'
+//            'pdm5'
+//            'solutions_speech'
+//            'sdm1'
+//            'sdm2'
+//            'sdm3'
+//            'sdm4'
+//            'sdm5'
+//            'targets_speech'
+//            'tdm1'
+//            'tdm2'
+//            'tdm3'
+//            'tdm4'
+//            'tdm5'
+//            'funding_required'
+//            'funding_descr'
+//            'preaching'
+//            'voting_question'
+//
+//            ]);
+
+
+            Event::create($request->all());
+
+
+
+
+
+
     }
 
     /**
