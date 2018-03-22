@@ -100,7 +100,7 @@
 
         <div class="form-group into_speech">
             <label for="intro_speech">Intro Speech (Text):</label>
-            <textarea class="form-control" id="intro_speach textarea"  name="into-speech" Placeholder="Write text which will be converted to a voice-over presentation" rows="5" type="text" required></textarea>
+            <textarea class="form-control" id="intro_speach textarea"  name="intro_speech" Placeholder="Write text which will be converted to a voice-over presentation" rows="5" type="text" required></textarea>
             <br/>
             <label for="initial_gift">Initial Gift  (Text):</label>
             <input class="form-control" id="initial_gift" name="ini_gift" placeholder="Identify a small 'initial gift', which the Management can 'present' to each and every member."  type="text" required/>
@@ -150,13 +150,13 @@
                     <h5 class="card-title text-center PDM_title"><strong>Problem Definition by the Manager:</strong></h5>
                     <h5 class="card-text PDMs">Top 5 problems, <strong>ranked top to bottom</strong></h5>
                     <label for="problems_speech">Problems Speech (Text):</label>
-                    <textarea class="form-control" id="problem_speech textarea"  name="problem_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
+                    <textarea class="form-control" id="problems_speech textarea"  name="problems_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
                     <br/>
                     <input class="form-control mb-1" id="PDM1" name="PDM1" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="PDM2" name="PDM2" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="PDM3" name="PDM3" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="PDM4" name="PDM4" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="PDM5" name="PDM5" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
+                    <input class="form-control mb-1" id="PDM2" name="PDM2" placeholder="Enter the problem (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="PDM3" name="PDM3" placeholder="Enter the problem (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="PDM4" name="PDM4" placeholder="Enter the problem (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="PDM5" name="PDM5" placeholder="Enter the problem (max. 50 characters)" type="text" />
                     <label for="upload_problems_summary">Upload Problems Summary:</label>
                     <!-- <input class="upload_problems_summary" id="upload problems summary"  name="upload_problems_summary" type="file"/>
                 Todo: this file uploading field should be added once I know how to put sore it - probably impossible via DB!-->
@@ -174,10 +174,10 @@
                     <textarea class="form-control" id="solution_speech textarea"  name="solutions_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
                     <br/>
                     <input class="form-control mb-1" id="SDM1" name="SDM1" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="SDM2" name="SDM2" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="SDM3" name="SDM3" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="SDM4" name="SDM4" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="SDM5" name="SDM5" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
+                    <input class="form-control mb-1" id="SDM2" name="SDM2" placeholder="Enter the solution (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="SDM3" name="SDM3" placeholder="Enter the solution (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="SDM4" name="SDM4" placeholder="Enter the solution (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="SDM5" name="SDM5" placeholder="Enter the solution (max. 50 characters)" type="text" />
                     <label for="upload_solutions_summary">Upload Solutions Summary:</label>
                     <!--<input class="upload_solutions_summary" id="upload solutions summary"  name="upload_solutions_summary" type="file"/>
                 Todo: this file uploading field should be added once I know how to put sore it - brobably impossible via DB!-->
@@ -195,10 +195,10 @@
                     <textarea class="form-control" id="target_speech textarea"  name="targets_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
                     <br/>
                     <input class="form-control mb-1" id="TDM1" name="TDM1" placeholder="Enter the target (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="TDM2" name="TDM2" placeholder="Enter the target (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="TDM3" name="TDM3" placeholder="Enter the target (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="TDM4" name="TDM4" placeholder="Enter the target (max. 50 characters)" type="text" required/>
-                    <input class="form-control mb-1" id="TDM5" name="TDM5" placeholder="Enter the target (max. 50 characters)" type="text" required/>
+                    <input class="form-control mb-1" id="TDM2" name="TDM2" placeholder="Enter the target (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="TDM3" name="TDM3" placeholder="Enter the target (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="TDM4" name="TDM4" placeholder="Enter the target (max. 50 characters)" type="text" />
+                    <input class="form-control mb-1" id="TDM5" name="TDM5" placeholder="Enter the target (max. 50 characters)" type="text" />
                     <label for="upload_targets_summary">Upload Targets Summary:</label>
                     <!--<input class="upload_targets_summary" id="upload targets summary"  name="upload_targets_summary" type="file"/>
                 Todo: this file uploading field should be added once I know how to put sore it - probably impossible via DB!-->
@@ -211,8 +211,8 @@
         </div><br/>
 
         <div class="inline form-check_funding">
-            <label class="form-check-label" for="funding_check">Will extra funding be required?</label>
-            <input type="checkbox" class="form-check funding_required" name="funding_required" id="funding_check" required>
+            <label class="form-check-label" for="funding_check" >Will extra funding be required?</label>
+            <input type="checkbox" class="form-check funding_required" name="funding_required" id="funding_check">
         </div>
         <br/>
         <br/>
@@ -242,7 +242,7 @@
         </div><br/>
 
         <div class="form-group"> <!-- Submit button -->
-            <button class="btn btn-success " name="submit" type="submit">Submit</button>
+            <button class="btn btn-success " type="submit">Submit</button>
         </div>
 
 

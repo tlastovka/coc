@@ -70,11 +70,9 @@ class EventsController extends Controller
 //            ]);
 
 
+
+
             Event::create($request->all());
-
-
-
-
 
 
     }

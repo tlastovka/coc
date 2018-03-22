@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller //Todo: here is a mistake!. If users try to access the admin view from URL using "/admin" they msut be redirected to the Auth middleware first!
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
