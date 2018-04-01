@@ -85,12 +85,14 @@
 
         <div class="form-group event_title">
             <strong class="control-label" for="event_title">Event Title:</strong>
-            <input class="form-control" id="event_title" name="event_title" placeholder="Event Title" type="text" required>
+            <input class="form-control" id="event_title" name="event_title" placeholder="Event Title (max. 50 characters)" type="text" required>
+            <!--Todo: Add counter with countdown of characters available during typing! Length limitation is intended to make the Admins/Managers think well about what they put in  !-->
         </div>
 
         <div class="form-group event_descr">
             <strong class="control-label" for="event_descr">Event Subject Description:</strong>
-            <textarea class="form-control" id="event_descr" name="event_descr" rows="3" placeholder="Describe the Event" type="text" required></textarea>
+            <textarea class="form-control" id="event_descr" name="event_descr" rows="3" placeholder="Describe the Event (max. 170 characters)" type="text" required></textarea>
+            <!--Todo: Add counter with countdown of characters available during typing!-->
         </div><br/>
 
 
@@ -103,14 +105,14 @@
             <textarea class="form-control" id="intro_speach textarea"  name="intro_speech" Placeholder="Write text which will be converted to a voice-over presentation" rows="5" type="text" required></textarea>
             <br/>
             <label for="initial_gift">Initial Gift  (Text):</label>
-            <input class="form-control" id="initial_gift" name="ini_gift" placeholder="Identify a small 'initial gift', which the Management can 'present' to each and every member."  type="text" required/>
+            <input class="form-control" id="initial_gift" name="ini_gift" placeholder="Identify a small 'initial gift', which the Management can 'present' to each and every member." type="text"/>
             <br/>
             <label for="upload_intro_summary">Upload Intro Summary:</label>
             <!-- <input class="upload_intro_summary" id="upload intro summary"  name="upload_intro_summary" type="file"/>
         Todo: this file uploading field should be added once I know how to put sore it - probably impossible via DB!-->
         </div>
         <div class="admin_intro_hint">
-                <h5> HINT: the introductory text should contatin the following:........ </h5>
+                <h5> HINT: the introductory text should contain the following:........ </h5>
         </div>
         <br/>
 
@@ -150,8 +152,9 @@
                     <h5 class="card-title text-center PDM_title"><strong>Problem Definition by the Manager:</strong></h5>
                     <h5 class="card-text PDMs">Top 5 problems, <strong>ranked top to bottom</strong></h5>
                     <label for="problems_speech">Problems Speech (Text):</label>
-                    <textarea class="form-control" id="problems_speech textarea"  name="problems_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
+                    <textarea class="form-control" id="problems_speech textarea"  name="problems_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com (Max. 170 characters)" rows="10" type="text" required></textarea>
                     <br/>
+                    <!-- There can be min. ONE to max. 5 PDM field!-->
                     <input class="form-control mb-1" id="PDM1" name="PDM1" placeholder="Enter the problem (max. 50 characters)" type="text" required/>
                     <input class="form-control mb-1" id="PDM2" name="PDM2" placeholder="Enter the problem (max. 50 characters)" type="text" />
                     <input class="form-control mb-1" id="PDM3" name="PDM3" placeholder="Enter the problem (max. 50 characters)" type="text" />
@@ -171,7 +174,7 @@
                     <h5 class="card-title text-center SDM_title"><strong>Solution Definition by the Manager:</strong></h5>
                     <h5 class="card-text SDQs">Top 5 solutions, <strong>ranked top to bottom</strong></h5>
                     <label for="solutions_speech">Solutions Speech (Text):</label>
-                    <textarea class="form-control" id="solution_speech textarea"  name="solutions_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
+                    <textarea class="form-control" id="solution_speech textarea"  name="solutions_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com (Max. 170 characters)" rows="10" type="text" required></textarea>
                     <br/>
                     <input class="form-control mb-1" id="SDM1" name="SDM1" placeholder="Enter the solution (max. 50 characters)" type="text" required/>
                     <input class="form-control mb-1" id="SDM2" name="SDM2" placeholder="Enter the solution (max. 50 characters)" type="text" />
@@ -192,7 +195,7 @@
                     <h5 class="card-title text-center TDM_title"><strong>Target Definition by the Manager:</strong></h5>
                     <h5 class="card-text TDQs">Top 5 targets, <strong>ranked top to bottom</strong></h5>
                     <label for="targets_speech">Targets Speech (Text):</label>
-                    <textarea class="form-control" id="target_speech textarea"  name="targets_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com" rows="10" type="text" required></textarea>
+                    <textarea class="form-control" id="target_speech textarea"  name="targets_speech" Placeholder="Write text which will be converted to a voice-over presentation. For hits, please refer to the CrossOrCheck manual or www.chrossorcheck.com (Max. 170 characters)" rows="10" type="text" required></textarea>
                     <br/>
                     <input class="form-control mb-1" id="TDM1" name="TDM1" placeholder="Enter the target (max. 50 characters)" type="text" required/>
                     <input class="form-control mb-1" id="TDM2" name="TDM2" placeholder="Enter the target (max. 50 characters)" type="text" />
@@ -210,6 +213,8 @@
 
         </div><br/>
 
+        <!-- FUNDING SECTION !-->
+
         <div class="inline form-check_funding">
             <label class="form-check-label" for="funding_check" >Will extra funding be required?</label>
             <input type="checkbox" class="form-check funding_required" name="funding_required" id="funding_check">
@@ -222,6 +227,27 @@
             <input class="form-control" id="funding_explanation" name="funding_descr" placeholder="Please, insert here description of any funding requirement" type="text"/>
             <div class="admin_questions_hints">
                 <h5> HINT: Please provide maximum clarity in terms of total cost, sharing algorithm, total contribution per one membership unit, funding options etc. For details, refer to the CrossOrCheck Manual   </h5>
+            </div>
+        </div>
+        <br/>
+
+
+        <!-- EXCLUSION SECTION !-->
+
+
+        <div class="inline form-check_exclusion">
+            <label class="form-check-label" for="exclusion_check" >Can you, and will you exclude free-riders?</label>
+            <input type="checkbox" class="form-check exclusion_possible" name="exclusion" id="exclusion">
+        </div>
+        <br/>
+
+
+
+        <div class="form-group exclusion_rule">
+            <label for="exclusion_rule">If yes, please describe the exclusion rule:</label>
+            <input class="form-control" id="exclusion_rule" name="exclusion_rule" placeholder="Please, insert here description of the exclusion rule" type="text"/>
+            <div class="admin_questions_hints">
+                <h5> HINT: Please provide maximum clarity in terms of the exclusion rule applicable to those who vote no and/or do not contribute. For details, refer to the CrossOrCheck Manual   </h5>
             </div>
         </div>
 
@@ -242,7 +268,7 @@
         </div><br/>
 
         <div class="form-group"> <!-- Submit button -->
-            <button class="btn btn-success " type="submit">Submit</button>
+            <button class="btn btn-success w-25" type="submit">Submit</button> <a href="{{route ('admin')}}" class="link_button w-25">Back to Admin Actions</a>
         </div>
 
 
@@ -259,17 +285,26 @@
 
     </form>
 
+
 </div>
 
+<br/>
+<!-- error messages !-->
 
+    <br/>
+    @if (count($errors))
 
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            </div>
 
+    @endif
 
-
-
-
-
-
+</div>
 
 
 

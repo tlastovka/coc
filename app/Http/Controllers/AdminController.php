@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Event;
 use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Http\Request;
 

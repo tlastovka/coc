@@ -46,7 +46,9 @@ class CreateEventsTable extends Migration
             $table->string('tdm5')->nullable();
             $table->boolean('funding_required')->nullable();
             $table->text('funding_descr')->nullable();
-            $table->text('preaching')->nullable();;
+            $table->boolean('exclusion')->nullable();
+            $table->text('exclusion_rule')->nullable();
+            $table->text('preaching')->nullable();
             $table->text('voting_question');
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));

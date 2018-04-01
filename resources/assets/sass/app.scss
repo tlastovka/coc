@@ -9,7 +9,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: #ffefe0;
+  background-color: #fbf4e1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -19,7 +19,7 @@
 
 .rules_table {
   background-color: #646c6f;
-  color: #ffefe0;
+  color: #fbf4e1;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -32,7 +32,7 @@
 
 .contact_table {
   background-color: #646c6f;
-  color: #ffefe0;
+  color: #fbf4e1;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -46,7 +46,7 @@
 
 .purpose {
   background-color: #646c6f;
-  color: #ffefe0;
+  color: #fbf4e1;
   text-align: center;
   margin-left: 100px;
   margin-right: 100px;
@@ -59,13 +59,13 @@
 
 .admin_action_table {
   margin-left: 100px;
-  margin-right: 100px;
-  padding: 5px;
+margin-right: 100px;
+padding: 5px;
 }
 
 .admin_table_heading {
   background-color: #646c6f;
-  color: #ffefe0;
+  color: #fbf4e1;
   margin-left: 100px;
   margin-right: 100px;
   padding: 5px;
@@ -76,7 +76,7 @@
 }
 
 .admin_events-body{
-  background-color: #ffefe0;
+  background-color: #fbf4e1;
 }
 
 .admin_questions_title, .admin_intro_title {
@@ -91,11 +91,11 @@
 }
 
 .card-body {
-  background-color: #ffefe0;
+  background-color: #fbf4e1;
 }
 
 .PDM_title, .SDM_title, .TDM_title {
-  color: #ffefe0;
+  color: #fbf4e1;
   background-color: #646c6f;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -103,4 +103,49 @@
 
 .form-check_funding{
   display: inline-block;
+}
+
+.link_button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  border-radius: 4px;
+  width: 25% !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  text-decoration: none !important;
+  background-color: #646c6f;
+  color: white !important;
+}
+
+
+.intab_link_button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  border-radius: 4px;
+  width: 100px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  text-decoration: none !important;
+  background-color: #646c6f;
+  color: white !important;
+}
+
+.admin_list_events {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
 }
