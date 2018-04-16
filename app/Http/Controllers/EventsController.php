@@ -76,11 +76,7 @@ class EventsController extends Controller
 
             ]);
 
-
-
-
             Event::create($request->all());
-
             Return redirect("/admin/events/list");
     }
 

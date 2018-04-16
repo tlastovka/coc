@@ -37,7 +37,8 @@ Route::get('/admin/events/create', 'EventsController@create')->name('create_even
 Route::get('/admin/events/list', 'EventsController@index')->name('list_events');//Todo: This route must not be accessible without successfulluly passing registration via Auth middleware
 Route::POST('/admin/events', 'EventsController@store')->name('store_events');//Todo: This route must not be accessible without successfulluly passing registration via Auth middleware
 Route::get('/admin/events/{event}', 'EventsController@show')->name('show_event');
-
+Route::get('/events/actions/create', 'ActionsController@create')->name('create_actions');
+Route::POST('/events/actions/create', 'ActionsController@store')->name('store_actions');
 //Route to an universal Time and Date Picker Todo: try to make this universal so that it can be used as a template for other routes/sites
 //Route::get('/admin/datepicker', function () {
 //    return view('/admin/admin_datepicker');

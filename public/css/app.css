@@ -10128,7 +10128,7 @@ a.text-dark:focus {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   border-radius: 4px;
-  width: 200px;
+  width: 100px;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   text-decoration: none !important;

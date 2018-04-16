@@ -10,7 +10,7 @@
     <td>{{ $event->event_date }}</td>
     <td>{{ $event->event_time }}</td>
     <td>{{ $event->event_title }}</td>
-    <td>{{ $event->event_descr }}</td>
+    <td>{{ $event->q1 }}</td>
     </ul>
     </div>
 
