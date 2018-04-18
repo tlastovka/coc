@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Action;
 use Illuminate\Http\Request;
 use App\Event;
 
@@ -25,7 +26,7 @@ class ActionsController extends Controller
      */
     public function create()
     {
-        $question=Event::find(1);  //todo: This needst to be dynamically modified to correspond witht he event No
+        $question = Event::find(1);  //todo: This needst to be dynamically modified to correspond witht he event No
 
         return view('act/create_actions', compact('question'));
     }
@@ -33,37 +34,39 @@ class ActionsController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-       $this->validate(request(), [
+        $this->validate(request(), [
 
-           'ini_gift' => 'boolean', //Todo what to put in if not required?
-            'a1' => 'boolean', //Todo: what is the input of the yes/no button
-            'a2' => 'boolean', //Todo: what is the input of the yes/no button
-            'pda1' => 'integer|max:1',
-            'pda2' => 'integer|max:1',
-            'pda3' => 'integer|max:1',
-            'pda4' => 'integer|max:1',
-            'pda5' => 'integer|max:1',
+            'ini_gift' => 'integer|max:1', //Todo what to put in if not required?
+            'a1' => 'integer|max:1', //Todo: what is the input of the yes/no button
+            'a2' => 'integer|max:1', //Todo: what is the input of the yes/no button
+            'pda1' => 'integer|max:5',
+            'pda2' => 'integer|max:5',
+            'pda3' => 'integer|max:5',
+            'pda4' => 'integer|max:5',
+            'pda5' => 'integer|max:5',
 
 
-           'tda1' => 'integer|max:1', // Todo: why required does not work here
-            'tda2' => 'integer|max:1',
-            'tda3' => 'integer|max:1',
-            'tda4' => 'integer|max:1',
-            'tda5' => 'integer|max:1',
-            'sda' => 'integer|max:2' //todo: To be changed to the sldier in the future
+            'tda1' => 'integer|max:5', // Todo: why required does not work here
+            'tda2' => 'integer|max:5',
+            'tda3' => 'integer|max:5',
+            'tda4' => 'integer|max:5',
+            'tda5' => 'integer|max:5',
+            'sda' => 'integer|max:100' //todo: To be changed to the sldier in the future
             // THIS IS A VERSION WHICH GOES AS FAR AS TOP THE DIAMOND
-           ]);
-    }
+        ]);
 
+        Action::create($request->all());
+        Return redirect("/home");
+    }
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
 //    public function show($id)
@@ -78,7 +81,7 @@ class ActionsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -89,8 +92,8 @@ class ActionsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -101,7 +104,7 @@ class ActionsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
