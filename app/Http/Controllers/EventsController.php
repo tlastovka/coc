@@ -11,7 +11,7 @@ class EventsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth'); // the one who wants to create an Event must be signed in
     }
 
     /**
@@ -92,10 +92,10 @@ class EventsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Event $event)
-    {
-        return view('act.show', compact('event'));// ToDo: should not here be a dollar sign?
-    }
+//    public function show(Event $event)
+//    {
+//        return view('act.show', compact('event'));// ToDo: should not here be a dollar sign?
+//    }
 
     /**
      * Show the form for editing the specified resource.

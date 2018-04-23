@@ -22,8 +22,8 @@
         <th scope="row">1</th>
         <td>Define Users</td>
         <td>You must create a pool of all Members and other authorized Users who will have rights to vote for the Issues and use the data</td>
-        <td><a class="intab_link_button" href="{{route('users')}}">Click to proceed</a></td>
-        <td><a class="intab_link_button" href="#">Click to proceed</a></td>
+        <td><a class="intab_link_button" href="{{route('users')}}">Proceed</a></td>
+        <td><a class="intab_link_button" href="#">Proceed</a></td>
         <!-- Todo: insert reference to a newly created route and create a corresponding view !-->
     </tr>
 
@@ -31,8 +31,8 @@
         <th scope="row">2</th>
         <td>Set-up the Event(s)</td>
         <td>An Event is an instance of the the process which starts with definition of the voting date and time, and the main issue in question. As part of the Event we inform the members about the Issue, problems, targets, solutions and funding options. We expect to collect genuine feedback from the Members, and ask them to vote on the Issue. To provide a relevant benchmark, some questions are paired with "desirable answers" as defined by the Administrator/Leader</a></td>
-        <td><a class="intab_link_button" href="{{route('create_events')}}">Click to proceed</a></td>
-        <td><a class="intab_link_button" href="{{route('list_events')}}">Click to proceed</a></td>
+        <td><a class="intab_link_button" href="{{route('create_events')}}">Proceed</a></td>
+        <td><a class="intab_link_button" href="{{route('list_events')}}">Proceed</a></td>
     </tr>
 
     {{--<tr>--}}

@@ -16,7 +16,7 @@ class ActionsController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth'); //anyone who wants to create an action must be signed in
     }
 
 
@@ -35,9 +35,10 @@ class ActionsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($event)
     {
-        $question = Event::find(1);  //todo: This needst to be dynamically modified to correspond witht he event No
+
+        $question = Event::find($event);  //todo: This needst to be dynamically modified to correspond witht he event No
 
         return view('act/create_actions', compact('question'));
     }
