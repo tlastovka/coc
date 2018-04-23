@@ -36,6 +36,7 @@ class CreateActionsTable extends Migration
             $table->integer('tda5');
 
             $table->integer('sda'); //todo: To be changed to the sldier in the future
+            $table->integer('user_id');
         });
     }
 

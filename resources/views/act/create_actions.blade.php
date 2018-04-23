@@ -23,7 +23,7 @@
 
 
             <form>
-
+                {{--<input type="hidden" name="user_id" value="{{ Auth::user()->id }}">--}}
                 <div>
                     <strong>{{ $question -> q1 }}</strong>
                     <br/>

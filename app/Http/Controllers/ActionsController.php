@@ -5,10 +5,21 @@ namespace App\Http\Controllers;
 use App\Action;
 use Illuminate\Http\Request;
 use App\Event;
+use Illuminate\Support\Facades\Auth;
 
 
 class ActionsController extends Controller
 {
+
+    /**
+     * ActionsController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
@@ -56,11 +67,17 @@ class ActionsController extends Controller
             'tda3' => 'integer|max:5',
             'tda4' => 'integer|max:5',
             'tda5' => 'integer|max:5',
-            'sda' => 'integer|max:100' //todo: To be changed to the sldier in the future
+            'sda' => 'integer|max:100', //todo: To be changed to the sldier in the future
+            'user_id' => 'integer'
             // THIS IS A VERSION WHICH GOES AS FAR AS TOP THE DIAMOND
         ]);
 
-        Action::create($request->all());
+        $data = $request->all();
+        $data['user_id'] = Auth::user()->id;
+
+//        Action::create($request->all());
+        Action::create($data);
+
         Return redirect("/home");
     }
     /**

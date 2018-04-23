@@ -8,6 +8,12 @@ use PhpParser\Node\Stmt\Return_;
 
 class EventsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      * It will respond to: GET:.../events
